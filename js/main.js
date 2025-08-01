@@ -67,11 +67,19 @@ $('.back-to-top').click(function () {
     return false;
 });
 
-$('.accordion-header').click(function(){
-    $('.accordion .accordion-body').slideUp(500);
-    $(this).next('.accordion-body').slideDown(500);
+$('.accordion-header').click(function() {
+    let body = $(this).next('.accordion-body');
+    let isOpen = body.is(':visible');
+
+    // Close all
+    $('.accordion .accordion-body').slideUp(800);
     $('.accordion .accordion-header span').text('+');
-    $(this).children('span').text('-');
+
+    // Toggle current
+    if (!isOpen) {
+        body.slideDown(800);
+        $(this).children('span').text('-');
+    }
 });
 
 });

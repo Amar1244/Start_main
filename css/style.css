@@ -1054,6 +1054,7 @@ body{
             cursor: pointer;
             margin-left: 1rem;
             margin-right: 2rem;
+            border-radius: 0px 15px 0px 0px;
         }
         
         .faq .row .accordion-container .accordion .accordion-header span{
@@ -1063,8 +1064,8 @@ body{
             width: 5rem;
             line-height: 4rem;
             font-size: 2rem;
-            background: #333;
-            color: #fff;
+            background: white;
+            color: black;
             clip-path: polygon(0% 0%,75% 0%,100% 50%,75% 100%,0% 100%); 
         }
         

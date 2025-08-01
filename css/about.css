@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+/* General Reset */
+/* Reset */
+* {
+  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+body {
+  background-color: #f4f6fc;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: #2c3e50;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+/* This will apply when user scrolls down */
+.nav-container.scrolled {
+      background-color: #1a1a2e !important;
+      border-bottom: 2px solid #00aaff !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+    }
+
+
+
+.logo {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00aced;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/about-as-service-contact-information-concept.jpg') center center/cover no-repeat;
+  color: white;
+  padding: 150px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background-color: #f0f0f0;
+  
+}
+
+.about-left {
+  flex: 1 1 60%;
+  padding-right: 40px;
+}
+
+.about-left h2 {
+  color: #0077ff;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.about-left p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.about-right {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.about-right img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.about-right h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.about-right p {
+  font-size: 14px;
+  color: #4b45f5;
+}
+/* button */
+/* From Uiverse.io by yaasiinaxmed */ 
+button {
+  --color: #0077ff;
+  font-family: inherit;
+  display: inline-block;
+  width: 10em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: white;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+button:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .about-left, .about-right {
+    padding: 0;
+    text-align: center;
+  }
+}
