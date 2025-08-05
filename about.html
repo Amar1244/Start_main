@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="./css/about.css" />
+  <!-- <script src="./js/main.js"></script> -->
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">YourLogo</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home Page</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay">
+      <!-- <h1>About us</h1> -->
+      <!-- <p>Telling our inspiring story from the very beginning to today</p> -->
+    </div>
+  </header>
+
+  <!-- About Content Section -->
+  <section class="about-section">
+    <div class="about-left">
+      <h2>Behind the success</h2>
+      <p>
+        We build powerful AI, Web & Data solutions — for students, startups, and professionals.
+        <br><br>
+        We’re a team of developers and AI engineers focused on creating custom-built solutions — from academic projects to production-ready tools.
+        <br><br>
+        Whether you're a college student, a solo founder, or a freelancer, we help you turn ideas into working software using the latest technologies like <b>Streamlit, Groq, Gemini, Python, React</b>, and more.
+        <br><br>
+        Every project includes <b>clean code, documentation, reports, and optional deployment</b>. No templates. No shortcuts. Just real, functional results tailored to your needs.
+        <br><br>
+        Our mission is to make advanced tech accessible and affordable. We collaborate closely to understand your vision, offer rapid prototyping, and ensure post-delivery support. With experience in building scalable data pipelines, AI apps, chatbots, computer vision systems, and automation workflows, we stand by innovation, reliability, and results.
+      </p>
+       <!-- From Uiverse.io by yaasiinaxmed --> 
+        <a href="index.html"><button>Go to Home Page</button></a>
+
+    </div>
+    <div class="about-right">
+      <img src="./images/pexels-hussein-altameemi-2776353.jpg" alt="Founder Photo" />
+      <h3>Raj Prajapati</h3>
+      <p>Founder & AI Engineer</p>
+    </div>
+  </section>
+
+</body>
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".nav-container");
+    if (window.scrollY > 200) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>
+</html>
